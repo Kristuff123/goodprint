@@ -6,7 +6,7 @@
 #    By: kgraczyk <kgraczyk@student.42warsaw.pl>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/29 23:08:27 by kgraczyk          #+#    #+#              #
-#    Updated: 2024/04/29 23:32:31 by kgraczyk         ###   ########.fr        #
+#    Updated: 2024/05/05 11:25:05 by kgraczyk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,14 +21,10 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(MAKE) -C ./libft
-	cp libft/libft.a $(NAME)
 	ar rc $(NAME) $(OBJS)
 clean:
-	$(MAKE) clean -C ./libft
 	$(RM) $(OBJS)
 fclean: clean
-	$(MAKE) fclean -C ./libft
 	$(RM) $(NAME)
 re: fclean all
 

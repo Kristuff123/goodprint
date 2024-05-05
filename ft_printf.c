@@ -6,11 +6,16 @@
 /*   By: kgraczyk <kgraczyk@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 22:58:53 by kgraczyk          #+#    #+#             */
-/*   Updated: 2024/04/29 23:15:23 by kgraczyk         ###   ########.fr       */
+/*   Updated: 2024/05/05 11:16:15 by kgraczyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+static void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
 
 static int	process_format(char format_specifier, va_list args)
 {

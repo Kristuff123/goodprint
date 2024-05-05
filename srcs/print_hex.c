@@ -6,12 +6,12 @@
 /*   By: kgraczyk <kgraczyk@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 22:37:35 by kgraczyk          #+#    #+#             */
-/*   Updated: 2024/04/29 23:23:59 by kgraczyk         ###   ########.fr       */
+/*   Updated: 2024/05/05 11:25:47 by kgraczyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
- 
+
 static size_t	hex_digits(unsigned int n)
 {
 	size_t	digits;
